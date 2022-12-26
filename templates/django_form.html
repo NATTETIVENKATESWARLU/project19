@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>django_form</title>
+</head>
+<body>
+    <center>
+    <h1>django_form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="submit" value="submit">
+    </form>
+    </center>
+</body>
+</html>
